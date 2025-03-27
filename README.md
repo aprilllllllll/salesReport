@@ -1,11 +1,12 @@
 CSV request：
+---------------------------
 
 SV -> report generate -> Transaction History -> Transaction History -> YUKI- INVOICE BY DATE RANGE
 
 -> filter ->Invoice Date (select the date range) -> export CSV
 
 RUN:
-
+-
 move YUKI-INVOICE BY DATE RAGANE to the folder (name must be the same)
 ***make sure DO NOT have other .csv and .png ***
 
