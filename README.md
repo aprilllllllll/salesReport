@@ -8,7 +8,7 @@ SV -> report generate -> Transaction History -> Transaction History -> YUKI- INV
 RUN:
 -
 move YUKI-INVOICE BY DATE RAGANE to the folder (name must be the same)
-***make sure DO NOT have other .csv and .png ***
+**make sure DO NOT have other .csv and .png**
 
 click run.sh
 
