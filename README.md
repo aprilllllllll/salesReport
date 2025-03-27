@@ -63,7 +63,7 @@ This script processes transaction history exported from SV's **"YUKI - INVOICE B
 ## 📁 Output Example
 
 ```
-📄 2025-03-report.csv
+📄 YYYY-MM-report.csv
 📊 avg_invoice_chart.png
 ```
 
