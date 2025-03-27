@@ -1,40 +1,73 @@
-CSV request：
----------------------------
+# Avg Invoice by date range Report Generator
 
-SV -> report generate -> Transaction History -> Transaction History -> YUKI- INVOICE BY DATE RANGE
+This script processes transaction history exported from SV's **"YUKI - INVOICE BY DATE RANGE"** feature to generate a monthly sales report and a visual chart.
 
--> filter ->Invoice Date (select the date range) -> export CSV
+---
 
-RUN:
--
-move YUKI-INVOICE BY DATE RAGANE to the folder (name must be the same)
-**make sure DO NOT have other .csv and .png**
+## 📝 CSV Export Instructions
 
-click run.sh
+1. In SV, navigate to:
 
-after run the program you will have YYYY-MM-report.csv  and avg_invoice_chart.png
+   ```
+   Report Generate -> Transaction History -> Transaction History -> YUKI - INVOICE BY DATE RANGE
+   ```
 
+2. Apply filter:
+   - `Invoice Date` → Select your desired date range
 
+3. Export the CSV file.
 
-Sales Calculation Guidelines
--------------------------------
-Layaway Sales
-Only include completed layaway transactions in the total sales.
+---
 
-Note: If a product has not been picked up, it should not be included in the sales total.
+## 🚀 How to Run
 
-Account Payments
-Do not count account payments as part of the sales total for the current invoice.
+1. Move the exported CSV file into the project folder.
+   - **The file name must be exactly:** `YUKI-INVOICE BY DATE RANGE.csv`
+   - ✅ **Make sure there are NO other `.csv` or `.png` files** in the folder
 
-Tax Exclusion
-The total sales amount should be calculated before tax. Tax amounts should not be included.
+2. Run the script:
+   ```bash
+   ./run.sh
+   ```
 
-Returns
-All returns must be deducted from the total sales.
+3. After execution, you will get:
+   - A monthly sales report: `YYYY-MM-report.csv`
+   - A chart: `avg_invoice_chart.png`
 
+---
 
-might cause issues:
+## 📊 Sales Calculation Guidelines
 
-return - sale = 0 which count as one invoice
+- **Layaway Sales**
+  - Only include **completed layaway** transactions in the total.
+  - If a product hasn't been picked up, **do not include** it.
 
-layaway 
+- **Account Payments**
+  - **Do not count** account payments as part of the sales total.
+
+- **Tax Exclusion**
+  - Sales are calculated **before tax**. Tax is **excluded**.
+
+- **Returns**
+  - All returns must be **deducted** from total sales.
+
+---
+
+## ⚠️ Known Issues / Notes
+
+- If a **return cancels out a sale** (e.g., return - sale = 0), it still counts as **one invoice**
+- Layaway logic may require manual validation in edge cases
+
+---
+
+## 📁 Output Example
+
+```
+📄 2025-03-report.csv
+📊 avg_invoice_chart.png
+```
+
+---
+
+Let me know if you'd like to add a contributors section or license info!
+
