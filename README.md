@@ -30,7 +30,7 @@ This script processes transaction history exported from SV's **"YUKI - INVOICE B
    ./run.sh
    ```
 
-3. After execution, you will get:
+3. After execution, then close it, you will get:
    - A monthly sales report: `YYYY-MM-report.csv`
    - A chart: `avg_invoice_chart.png`
 
