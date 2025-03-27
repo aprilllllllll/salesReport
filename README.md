@@ -23,7 +23,7 @@ This script processes transaction history exported from SV's **"YUKI - INVOICE B
 
 1. Move the exported CSV file into the project folder.
    - **The file name must be exactly:** `YUKI-INVOICE BY DATE RANGE.csv`
-   - ✅ **Make sure there are NO other `.csv` or `.png` files** in the folder
+   - ✅ **Make sure there are NO other `.csv` or `.png` files in the folder. If it is, please delete it.**
 
 2. Run the script:
    ```bash
