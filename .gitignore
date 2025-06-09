@@ -1,5 +1,6 @@
 run.sh
 data.csv
+result.csv
 run_script.command
 2025-01-report.csv
 avg_invoice_chart.png
